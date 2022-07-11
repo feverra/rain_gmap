@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>Map</title>
+    <meta name="googlebot" content="noindex" />
+    <meta name="googlebot" content="indexifembedded" />
+</head>
+
+<body>
+    <div id="radar-app">
+        <div id="app-icon">
+            <a href="https://www.rainviewer.com" title="RainViewer" class="main-site-link">
+                <img src="https://www.rainviewer.com/images/rainviewer_icon_small.png" width="38" height="38" alt="RainViewer App" />
+            </a>
+            <a href="https://www.rainviewer.com" title="RainViewer" class="main-site-link">RainViewer</a>
+        </div>
+
+        <div id="menu-bar">
+            <div id="play-section">
+                <span id="past-mark">Past</span>
+                <span id="now-mark" style="display: none;">Now</span>
+                <span id="forecast-mark" style="display: none;">Forecast</span>
+                <span id="forecast-time">00:00</span>
+                <input type="button" value="&larr;" id="button-prev" class="small-hide" />
+                <input type="button" value="Play" id="button-play" />
+                <input type="button" value="&rarr;" id="button-next" class="small-hide" />
+            </div>
+        </div>
+
+        <div id="info-popup" class="popup info">
+            <ul class="short-color-scheme cs" id="color-scheme-map">
+                <li>
+                    <div class="cs-clouds"></div>
+                    <p>Drizzle (probably)</p>
+                </li>
+                <li>
+                    <div class="cs-percip-1"></div>
+                    <p>Drizzle</p>
+                </li>
+                <li>
+                    <div class="cs-percip-2"></div>
+                    <p>Light Rain</p>
+                </li>
+                <li>
+                    <div class="cs-percip-3"></div>
+                    <p>Light Rain</p>
+                </li>
+                <li>
+                    <div class="cs-rainfall-1"></div>
+                    <p>Rain</p>
+                </li>
+                <li>
+                    <div class="cs-rainfall-2"></div>
+                    <p>Rain</p>
+                </li>
+                <li>
+                    <div class="cs-rainfall-3"></div>
+                    <p>Heavy Rain</p>
+                </li>
+                <li>
+                    <div class="cs-storm-1"></div>
+                    <p>Heavy Rain</p>
+                </li>
+                <li>
+                    <div class="cs-storm-2"></div>
+                    <p>Storm</p>
+                </li>
+                <li>
+                    <div class="cs-storm-3"></div>
+                    <p>Storm</p>
+                </li>
+                <li>
+                    <div class="cs-hail-1"></div>
+                    <p>Hail</p>
+                </li>
+                <li>
+                    <div class="cs-hail-2"></div>
+                    <p>Hail</p>
+                </li>
+            </ul>
+        </div>
+        <div class="map-background">
+            <div id="map-canvas" class="map" style="margin-top: 42px"></div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="./common.js" defer></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.8.0/leaflet.js" defer></script>
+    <script type="text/javascript" src="./radar-map.js" defer></script>
+
+    <script>
+
+    </script>
+    <link rel="stylesheet" href="https://www.rainviewer.com/css/embed-map.css?1657182109">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.8.0/leaflet.css">
+    <link rel="stylesheet" href="https://www.rainviewer.com/css/leaflet-custom.css?1657182109">
+
+
+</body>
+
+</html>
